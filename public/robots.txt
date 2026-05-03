@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iguoxing.github.io/linkedin-hr-toolkit/sitemap.xml
