@@ -19,6 +19,7 @@
     <ProfileOptimizer v-else-if="activeTab==='profile'" />
     <JDAnalyzer v-else-if="activeTab==='jd'" />
     <JobExplorer v-else-if="activeTab==='jobs'" />
+    <CompetitorAnalyzer v-else-if="activeTab==='competitor'" />
   </main>
 </template>
 
@@ -29,6 +30,7 @@ import KeywordExpander from './components/KeywordExpander.vue'
 import ProfileOptimizer from './components/ProfileOptimizer.vue'
 import JDAnalyzer from './components/JDAnalyzer.vue'
 import JobExplorer from './components/JobExplorer.vue'
+import CompetitorAnalyzer from './components/CompetitorAnalyzer.vue'
 
 const tabs = [
   { id: 'boolean', label: '🔍 布尔搜索' },
@@ -36,6 +38,7 @@ const tabs = [
   { id: 'profile', label: '📝 资料优化' },
   { id: 'jd', label: '📄 JD 分析' },
   { id: 'jobs', label: '💼 职位探索' },
+  { id: 'competitor', label: '🏷️ 竞品分析' },
 ]
 const activeTab = ref('boolean')
 </script>
